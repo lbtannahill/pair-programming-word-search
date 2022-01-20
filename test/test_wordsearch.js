@@ -52,7 +52,7 @@ describe("#wordSearch()", function() {
     assert.isTrue(result);
   });
 
-  it("should return true if vertical word is backwards", function() {
+  it("should return true if word is diagonal", function() {
     const result = wordSearch([
       ['A', 'W', 'C', 'F', 'Q', 'U', 'A', 'L'],
       ['S', 'E', 'I', 'N', 'F', 'E', 'L', 'D'],
@@ -63,7 +63,7 @@ describe("#wordSearch()", function() {
       ['U', 'B', 'T', 'W', 'A', 'P', 'A', 'I'],
       ['O', 'D', 'C', 'A', 'K', 'U', 'A', 'S'],
       ['E', 'Z', 'K', 'F', 'Q', 'U', 'A', 'L'],
-    ], 'ZDBF');
+    ], '');
 
     assert.isTrue(result);
   });
